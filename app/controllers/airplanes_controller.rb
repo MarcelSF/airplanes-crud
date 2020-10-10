@@ -22,7 +22,6 @@ class AirplanesController < ApplicationController
 
   def update
     @airplane.update(airplane_params)
-    @airplane.save
     redirect_to airplane_path(@airplane)
   end
 
